@@ -1,0 +1,20 @@
+[project]
+name        = "tfplan-parser"
+version     = "0.1.0"
+description = "CLI tool to summarise Terraform plan diffs"
+authors     = [{name = "Nemanja"}]
+
+# Runtime deps
+dependencies = [
+    "typer[all]>=0.12.0",
+    "rich>=13.0.0"
+]
+
+[project.scripts]
+tfplan-parser = "tfplan_parser.cli:_entry"
+
+[tool.pytest.ini_options]
+addopts = "-q"
+
+[project.optional-dependencies]
+test = ["pytest>=8.0"]
