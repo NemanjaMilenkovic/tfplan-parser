@@ -69,6 +69,30 @@ tfplan-parser -i tfplan.txt --output report.html
 └────────┴──────────────────────────────────┴───────┘
 ```
 
+## 📝 Example JSON ouptut
+
+```json
+{
+  "create": {
+    "google_storage_bucket": [
+      "org--aorg_google_storage_bucket-user-auser_1A496840",
+      "org--borg_google_storage_bucket-user-buser_1B69C449"
+    ]
+  },
+  "update": {
+    "google_compute_instance": [
+      "org--aorg_compute_instance-user-auser_ABC123DEF"
+    ]
+  },
+  "destroy": {
+    "google_sql_database": ["org--aorg_sql_database-main"]
+  },
+  "replace": {
+    "google_bigquery_table": ["org--aorg_bigquery_table-main_table"]
+  }
+}
+```
+
 ## 🧪 Testing
 
 ```bash
