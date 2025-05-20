@@ -22,8 +22,21 @@ This tool tracks **replace** as its own action so you get an explicit replace co
 
 ## ⚙️ Installation
 
+Set up Python virtual environment:
+
 ```bash
-# inside your project dir / virtual-env
+# from project root - create a .venv folder
+python3 -m venv .venv
+# activate it (macOS / Linux)
+source .venv/bin/activate
+```
+
+Install
+
+```bash
+# upgrade pip (optional but recommended)
+python -m pip install --upgrade pip
+# install your project in editable mode (inside your project dir / virtual-env)
 pip install -e .
 ```
 
